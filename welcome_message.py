@@ -1,5 +1,5 @@
 # Allow user to input their First Name and assign that input to a variable
-firstname = input("Please enter your last name. ")
+firstname = input("Please enter your first name. ")
  
 # Allow user to input their Last Name and assign that input to a variable
 lastname = input("Please enter your last name. ")
