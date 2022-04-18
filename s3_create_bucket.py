@@ -8,8 +8,8 @@ bucket = s3.Bucket("BUCKET_NAME")
 
 response = bucket.create(
     ACL='private'|'public-read'|'public-read-write'|'authenticated-read',
-    CreateBucketConfiguration={
-        'LocationConstraint': 'REGION'
+    CreateBucketConfiguration={     #delete to have bucket deployed in default region us-east-1
+        'LocationConstraint': 'REGION' 
     },
     
 )
