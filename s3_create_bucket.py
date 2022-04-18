@@ -4,12 +4,12 @@ using boto3 and python to create an s3 bucket NOTE: https://boto3.amazonaws.com/
 import boto3
 
 s3 = boto3.resource("s3")
-bucket = s3.Bucket("demobucket2387094359034")
+bucket = s3.Bucket("BUCKET_NAME")
 
 response = bucket.create(
-    ACL='public-read',
+    ACL='private'|'public-read'|'public-read-write'|'authenticated-read',
     CreateBucketConfiguration={
-        'LocationConstraint': 'us-east-2'
+        'LocationConstraint': 'REGION'
     },
     
 )
