@@ -16,6 +16,7 @@ def create_ec2():
             InstanceType='t2.micro',
             #KeyName='ec2-keypair' #add a key pair to ssh into instance
             SecurityGroups=['default']
+            UserData= #add a script
             #tags=[{'ResourceType': 'instance','Key': }]
             )
             
