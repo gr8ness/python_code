@@ -10,7 +10,7 @@ def start_instance():
         print("start instance")
         response = client.start_instances(
         InstanceIds=[ #provide instance ids
-            'i-0660aee66332ebfbc','i-0ad3832008a2720bf' 
+            'ENTER_INSTANCE_ID','ENTER_INSTANCE_ID' 
         ],
     )
     
